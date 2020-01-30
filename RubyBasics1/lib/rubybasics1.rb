@@ -36,4 +36,19 @@ end
 # Part III
 def sum_to_n? arr, n
   # YOUR CODE HERE
+  if arr.length == 0
+    return false
+  elsif arr.length == 1
+    return false
+  else
+    for i in (0...arr.length)
+      for j in (0...arr.length)
+        if (arr[i] == arr[j] && arr[i] + arr[j] == n)
+        elsif arr[i] + arr[j] == n
+          return true
+        end
+      end
+    end
+  return false
+  end
 end
