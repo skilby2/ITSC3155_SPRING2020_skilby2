@@ -16,13 +16,20 @@ class Dessert
   
   def healthy?
     # your code here
+    if @calories < 200
+      return true
+    else 
+      return false
+    end
   end
   
   
   def delicious?
     # your code here
+    true
   end
 end
+
 
 class JellyBean < Dessert
   # add code for setters and getters
