@@ -12,8 +12,6 @@ class Dessert
 
   
   
-  
-  
   def healthy?
     # your code here
     if @calories < 200
@@ -33,7 +31,12 @@ end
 
 class JellyBean < Dessert
   # add code for setters and getters
+  attr_accessor :flavor
   def initialize(flavor)
     # your code here
+    super(name, calories)
+    @name = flavor + " " + "jelly bean"
+    @calories = 5
+    @flavor = flavor
   end
 end
